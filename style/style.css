@@ -1,0 +1,232 @@
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  font-family: 'OpenSans';
+  color: #fafafa;
+  padding-bottom: 30px;
+}
+*,*:focus,*:hover{
+  outline:none;
+}
+a {
+  text-decoration: none;
+  color: #ffff;
+  font-family: 'OpenSans-CondensedBold';
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  border:none;
+}
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18.9px 0;
+}
+
+.header__inner-nav li {
+  list-style: none;
+  display: inline;
+  font-size: 14px;
+}
+
+.header__inner-nav li+li {
+  margin-left: 30px;
+}
+
+.content__title {
+  padding: 40px 40px;
+  text-align: center;
+  font-family: 'OpenSans-Light italic';
+  font-size: 22px;
+}
+.content__title-socials {
+  margin-top: 15px;
+}
+.content__title-socials a {
+  height: 33px;
+width: 33px;
+display: inline-block;
+background-color: #fff;
+border-radius: 50%;
+position: relative;
+}
+.content__title-socials span {
+  color: black;
+position: absolute;
+transform: translate(-50%,50%);
+font-size: 16px;
+}
+.content__posts {
+  display: flex;
+flex-direction: column;
+max-height: 1450px;
+flex-wrap: wrap;
+}
+.content__posts-post {
+  width: 465px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.content__posts-post-top {
+  background-color: rgba(0,0,0,0.3);
+}
+.content__posts-post-top .slider {
+  position: relative;
+}
+.content__posts-post-top .slider .slick-next, .slick-prev {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border:0;
+  font-size: 0;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+.content__posts-post-top .slider  .slick-prev {
+  right: 50px;
+  z-index: 10;
+}
+.content__posts-post-top .slider .slick-next::before,.slick-prev::before {
+  position: absolute;
+content: "\f054";
+color: #a0a0a0;
+font-family: "icomoon";
+font-size: 13px;
+transform: translate(-50%,-50%);
+}
+.content__posts-post-top .slider .slick-prev::before {
+  content: "\f053";
+}
+.content__posts-post-top-music-wrap {
+  display: flex;
+  padding-top: 20px;
+}
+.content__posts-post-top-music-player {
+  font-size: 12px;
+  color: #b9b9b9;
+  margin-left: 20px;
+}
+.content__posts-post-top-music-album {
+  margin-left: 10px;
+  position: relative;
+}
+.content__posts-post-top-music-album-cover{
+  position: absolute;
+  left:10px;
+}
+.content__posts-post-top-music-player-info span {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  display: inline-block
+}
+.content__posts-post-top-music-player audio {
+  width: 260px;
+  height: 30px;
+
+}
+.content__posts-post-body {
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+}
+.content__posts-post-body-title {
+  font-family: 'OpenSans-CondensedBold';
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.content__posts-post-body p {
+  font-size: 13px;
+}
+.content__posts-post-body p +p {
+  margin-top: 10px;
+}
+.content__posts-post-quote {
+  font-size: 18px !important;
+  font-family: 'OpenSans-Light italic';
+  margin-bottom: 5px;
+}
+.content__posts-post-quote-author {
+  font-size: 13px;
+  color: #797979;
+  padding-top: 5px;
+}
+.content__posts-post-body-convo-name {
+  font-family: 'OpenSans Bold';
+  color: #b9b9b9;
+}
+.content__posts-post-footer {
+  font-size: 10px;
+  color:#797979;
+padding: 10px 20px;
+display: flex;
+background-color: rgba(0,0,0,0.8);
+}
+.content__posts-post-footer-dateWrap {
+  display: flex;
+  align-items: center;
+}
+.content__posts-post-footer .post-type{
+  font-size: 13px;
+}
+.content__posts-post-footer-date {
+  padding-left: 5px;
+}
+.content__posts-post-footer-likes {
+  display: inline-block;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.content__posts-post-footer-likes .icon-heart {
+  font-size: 13px;
+  margin-right: 5px;
+  color:#797979;
+}
+#player-wrap {
+  background-color: black;
+  margin-bottom: 20px;
+}
+.green-audio-player .controls {
+  font-size: 10px;
+}
+audio {
+  display: none;
+}
+.green-audio-player svg {
+  height: 15px;
+}
+.play-pause-btn__icon, .volume__speaker {
+  fill:#ffff;
+}
+.green-audio-player .slider .gap-progress .pin {
+  background-color: #ffff;
+}
+.content button {
+  background-color: rgba(0,0,0,0.8);
+  border: none;
+  color: #dedede;
+  font-size: 13px;
+  font-family: 'OpenSans-CondensedBold';
+  padding: 10px 20px;
+  cursor:pointer;
+}
