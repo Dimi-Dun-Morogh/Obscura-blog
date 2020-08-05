@@ -3,7 +3,10 @@ body {
   background-size: cover;
   font-family: 'OpenSans';
   color: #fafafa;
-  padding-bottom: 30px;
+
+}
+iframe {
+  width: 100%;
 }
 *,*:focus,*:hover{
   outline:none;
@@ -25,12 +28,12 @@ iframe {
   border:none;
 }
 .container {
-  width: 960px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header {
+.header, .footer {
   background-color: rgba(0, 0, 0, .3);
 }
 
@@ -46,11 +49,15 @@ iframe {
   display: inline;
   font-size: 14px;
 }
-
+.header .nav-mobile {
+  display: none;
+}
 .header__inner-nav li+li {
   margin-left: 30px;
 }
-
+.content {
+  padding-bottom: 50px;
+}
 .content__title {
   padding: 40px 40px;
   text-align: center;
@@ -79,6 +86,8 @@ font-size: 16px;
 flex-direction: column;
 max-height: 1450px;
 flex-wrap: wrap;
+align-items: center;
+
 }
 .content__posts-post {
   width: 465px;
@@ -221,7 +230,7 @@ audio {
 .green-audio-player .slider .gap-progress .pin {
   background-color: #ffff;
 }
-.content button {
+.content-older {
   background-color: rgba(0,0,0,0.8);
   border: none;
   color: #dedede;
@@ -229,4 +238,45 @@ audio {
   font-family: 'OpenSans-CondensedBold';
   padding: 10px 20px;
   cursor:pointer;
+
+}
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 65px;
+  justify-content: space-between;
+}
+.footer__inner a {
+  color: #b9b9b9;
+  font-size: 12px;
+}
+.footer__inner-popular, .footer__inner-twitter,.footer__inner-about-me,.footer__inner-custom-text {
+  max-width: 220px;
+}
+.footer__inner-popular span, .footer__inner-twitter span, .footer__inner-about-me span, .footer__inner-custom-text span {
+
+  font-size: 14px;
+  font-family: 'OpenSans-CondensedBold';
+  margin-bottom: 25px;
+  display: block;
+  color:#ffff;
+}
+.footer__inner-popular li , .footer__inner-twitter  li {
+  list-style: none;
+  color: #b9b9b9;
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.footer__inner-popular li+li, .footer__inner-twitter  li+li {
+  border-top: 1px dotted #797979;
+  padding-top: 20px;
+}
+.footer__inner-about-me,.footer__inner-custom-text {
+  color: #b9b9b9;
+  font-size: 12px;
+  line-height: 25px;
+}
+.footer__inner-about-me p+p ,.footer__inner-custom-text p+p {
+  margin-top: 40px;
 }

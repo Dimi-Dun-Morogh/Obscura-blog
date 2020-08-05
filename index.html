@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/green-audio-player.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/media.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/green-audio-player.min.js"></script>
     <script src="js/slick.js"></script>
@@ -22,6 +23,7 @@
             <a href="#"><img src="img/logo.png" alt="logo" /></a>
           </div>
           <div class="header__inner-nav">
+            <span class="icon-list-ul nav-mobile"></span>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
@@ -79,8 +81,8 @@
           <div class="content__posts-post">
             <div class="content__posts-post-top">
               <iframe
-                width="465"
-                height="315"
+         
+              height="315"
                 src="https://www.youtube.com/embed/uG6oBC0Ym5c"
               >
               </iframe>
@@ -287,9 +289,44 @@
             </div>
           </div>
         </div>
-        <button>Older Posts</button>
+        <button class="content-older">Older Posts</button>
       </div>
     </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__inner-popular">
+        <span>Popular Posts</span>
+        <ul>
+          <li><a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a></li>
+
+          <li><a href="#">Scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</a></li>
+          <li><a href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</a></li>
+        </ul>
+      </div>
+      <div class="footer__inner-twitter">
+        <span>Twitter</span>
+        <ul>
+          <li><a href="#">Praesent commodo id cursus magna - 21 hours ago</a></li>
+          <li><a href="#">Vestibulum id ligula porta euismod semper, auctory dolor idfermentum. - 2 days ago</a></li>
+          <li><a href="#">Donec ullamcorper nulla non metus auctor. - 3 days ago</a></li>
+        </ul>
+      </div>
+      <div class="footer__inner-about-me">
+        <span>A Little About Me</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <p>
+          Donec id elit non porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel.
+        </p>
+      </div>
+      <div class="footer__inner-custom-text">
+        <span>Some Custom Text</span>
+        <p>Maecenas faucibus mollis interdum. Vivamus sagittis lacus  faucibus dolor auctor. Etiam porta sem malesuada magna elit.</p>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Malesuada magna mollis euismod.</p>
+      </div>
+    </div>
+  </div>
+</footer>
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -18,4 +18,9 @@ $(function () {
   });
   //player
   new GreenAudioPlayer("#player-wrap");
+  //mobile nav
+    //header menu media
+    $(".nav-mobile").click(function () {
+      $(".header__inner-nav ul").slideToggle();
+    });
 });

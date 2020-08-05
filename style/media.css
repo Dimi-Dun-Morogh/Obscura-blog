@@ -1,0 +1,59 @@
+@media (max-width:  960px){
+  .header__inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .content__posts {
+    max-height: none;
+  }
+  .content-older {
+    margin-left: 10px;
+  }
+  .footer__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .header .nav-mobile {
+    display:block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .header__inner-nav ul {
+    display: none;
+    position: absolute;
+    top:10px;
+    right:45px;
+    background-color: black;
+padding: 10px;
+border-bottom-left-radius: 5%;
+border-bottom-right-radius: 5%;
+
+  }
+  .header__inner-nav li {
+    display: list-item;
+    margin-top: 10px;
+  }
+  .header__inner-nav li+li {
+    margin-left: 0px;
+
+  }
+  .footer__inner-about-me p+p ,.footer__inner-custom-text p+p {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 470px) {
+  .content__posts-post {
+    width: 300px;
+    overflow: hidden;
+  }
+  .content__posts-post-top img {
+
+  }
+  .content__posts-post-top-music-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
